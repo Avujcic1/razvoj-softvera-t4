@@ -58,7 +58,7 @@ class ArtikalTest {
     void setCijenaIzuzetak() {
         Artikal a = new Artikal("ABC", "Proizvod", 100);
         assertThrows(IllegalArgumentException.class, () -> {
-            a.setCijena(-1);
+            a.setCijena((double) -1);
         }, "Cijena je negativna");
     }
 
@@ -116,7 +116,7 @@ class ArtikalTest {
         a2.setCijena(100.1);
         assertFalse(a1.equals(a2));
         assertFalse(a2.equals(a1));
-        a2.setCijena(100);
+        a2.setCijena((double) 100);
         assertTrue(a1.equals(a2));
         assertTrue(a2.equals(a1));
     }
