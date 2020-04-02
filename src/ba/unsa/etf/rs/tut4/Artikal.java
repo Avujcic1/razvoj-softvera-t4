@@ -6,6 +6,9 @@ public class Artikal {
     private String sifra;
     private String naziv;
     private double cijena;
+    public Artikal() {
+
+    }
 
     public void setSifra(String sifra) {
         if(sifra.isEmpty() || sifra==null) throw new IllegalArgumentException("Sifra je prazna!");
