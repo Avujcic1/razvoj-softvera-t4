@@ -3,7 +3,7 @@ package ba.unsa.etf.rs.tut4;
 import java.util.ArrayList;
 
 public class Racun {
-    private class Stavka {
+    private static class Stavka {
         private Artikal artikal;
         private int kolicina;
         public Stavka(Artikal artikal, int kolicina) {
